@@ -2,6 +2,7 @@
   <div class="home">
     <input type="text" v-model="val" />
     <button @click="test">测试</button>
+    <span>dasfdsfas</span>
   </div>
 </template>
 

@@ -1,3 +1,5 @@
+@import './normalize.css';
+
 *,
 *::after,
 *::before{
@@ -10,8 +12,33 @@
   --color-text:#666;
   --color-high-text: #ff5777;
   --color-tint:#ff8198;
+  --color-background:#fff;
+  --font-size:14px;
+  --line-height:1.5;
 }
 body{
   width:100vw;
-  
+  color:var(--color-text);
+  background:var(--color-background);
+}
+a{
+  color:var(--color-text);
+  text-emphasis: none;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.clear-fix{
+  zoom: 1;
+}
+.clear-fix::after{
+  clear: both;
+  content:'';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
