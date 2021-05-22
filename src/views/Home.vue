@@ -1,18 +1,36 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <input type="text" v-model="val" />
+    <button @click="test">测试</button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "Home",
-  components: {
-    HelloWorld,
+  name: 'Home',
+  data() {
+    return {
+      val: ''
+    };
   },
+  components: {},
+  methods: {
+    test() {
+      let val = this.val;
+      if (val === 'sss') {
+        console.log('dddd');
+        return;
+      }
+      if (val === '22') {
+        console.log();
+        return;
+      }
+      if (val === '3') {
+        console.log('dd');
+        return;
+      }
+      console.log('dddddddd');
+    }
+  }
 };
 </script>

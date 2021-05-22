@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-text:#666;
+  --color-high-text: #ff5777;
+  --color-tint:#ff8198;
+}
+body{
+  width:100vw;
+  
+}
