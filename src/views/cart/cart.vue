@@ -11,4 +11,8 @@ export default {
   methods: {}
 };
 </script>
-<style scoped></style>
+<style scoped>
+div {
+  color: rgb(87, 145, 121);
+}
+</style>
