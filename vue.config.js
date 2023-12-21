@@ -5,7 +5,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-  publicPath:'/vue2wMall/',
+  publicPath:'/vue2Mall/',
   chainWebpack: (config) => {
     //第一个参数：别名 第二个参数：路径
     config.resolve.alias
